@@ -1,81 +1,54 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f8;
-  color: #333;
 }
 
 header {
-  background-color: #4f46e5;
+  background-color: #333;
   color: white;
+  padding: 1em;
   text-align: center;
-  padding: 2rem 1rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav li {
+  margin: 0.5em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
 
 main {
-  padding: 1.5rem;
-}
-
-.form-section, .tasks-section {
-  margin-bottom: 2rem;
-  background: white;
-  border-radius: 10px;
-  padding: 1rem;
-  box-shadow: 0 0 10px #ccc;
-}
-
-input, textarea {
-  width: 100%;
-  padding: 0.75rem;
-  margin: 0.5rem 0;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-  font-size: 1rem;
-}
-
-button {
-  background-color: #4f46e5;
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
-}
-
-button:hover {
-  background-color: #3730a3;
+  padding: 1em 2em;
 }
 
 .task {
-  border-left: 5px solid #4f46e5;
-  background: #f9f9ff;
-  margin-bottom: 1rem;
-  padding: 0.75rem;
-  border-radius: 5px;
+  background-color: white;
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 footer {
   text-align: center;
-  padding: 1rem;
-  background-color: #eee;
-  color: #666;
-}
-
-/* Estilo para tareas resueltas */
-.resolved-section {
-  margin-top: 3rem;
-  background-color: #fff;
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #ccc;
-}
-
-.subject-block {
-  margin-bottom: 1.5rem;
-  border-left: 5px solid #4f46e5;
-  background: #f9f9ff;
-  padding: 1rem;
-  border-radius: 5px;
+  padding: 1em;
+  background-color: #333;
+  color: white;
 }

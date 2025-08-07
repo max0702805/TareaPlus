@@ -2,71 +2,35 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TareaPlus</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tareas Resueltas de Secundaria</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>TareaPlus 📚</h1>
-    <p>Resuelve y aprende con tareas de secundaria</p>
+    <h1>Tareas Resueltas de Secundaria</h1>
+    <nav>
+      <ul id="menu">
+        <li><a href="#" onclick="mostrarMateria('ingles')">Inglés</a></li>
+        <li><a href="#" onclick="mostrarMateria('espanol')">Español</a></li>
+        <li><a href="#" onclick="mostrarMateria('matematicas')">Matemáticas</a></li>
+        <li><a href="#" onclick="mostrarMateria('ciencias')">Ciencias Naturales</a></li>
+        <li><a href="#" onclick="mostrarMateria('sociales')">Sociales</a></li>
+        <li><a href="#" onclick="mostrarMateria('tecnologia')">Tecnología</a></li>
+        <li><a href="#" onclick="mostrarMateria('etica')">Ética</a></li>
+        <li><a href="#" onclick="mostrarMateria('religion')">Religión</a></li>
+        <li><a href="#" onclick="mostrarMateria('educacion_fisica')">Educación Física</a></li>
+        <li><a href="#" onclick="mostrarMateria('artistica')">Artística</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
-    <section class="form-section">
-      <h2>Publica tu tarea</h2>
-      <form id="taskForm">
-        <input type="text" id="studentName" placeholder="Tu nombre" required />
-        <textarea id="taskText" placeholder="Escribe tu tarea aquí..." required></textarea>
-        <button type="submit">Publicar</button>
-      </form>
-    </section>
-
-    <section class="tasks-section">
-      <h2>Tareas de otros estudiantes</h2>
-      <div id="taskList"></div>
-    </section>
-
-    <section class="resolved-section">
-      <h2>Tareas resueltas por materia</h2>
-
-      <div class="subject-block">
-        <h3>📘 Español</h3>
-        <p><strong>Pregunta:</strong> ¿Cuál es la enseñanza de la fábula "La liebre y la tortuga"?</p>
-        <p><strong>Respuesta:</strong> La constancia y el esfuerzo vencen a la rapidez sin compromiso.</p>
-      </div>
-
-      <div class="subject-block">
-        <h3>🧮 Matemáticas</h3>
-        <p><strong>Pregunta:</strong> ¿Cuánto es 2/3 + 1/4?</p>
-        <p><strong>Respuesta:</strong> El resultado es 11/12.</p>
-      </div>
-
-      <div class="subject-block">
-        <h3>🔬 Ciencias</h3>
-        <p><strong>Pregunta:</strong> Nombra 3 partes de la célula.</p>
-        <p><strong>Respuesta:</strong> Núcleo, Citoplasma y Membrana celular.</p>
-      </div>
-
-      <div class="subject-block">
-        <h3>🌍 Sociales</h3>
-        <p><strong>Pregunta:</strong> ¿Causas de la Revolución Francesa?</p>
-        <p><strong>Respuesta:</strong> Desigualdad, crisis económica, ideas ilustradas y mal gobierno.</p>
-      </div>
-
-      <div class="subject-block">
-        <h3>🇬🇧 Inglés</h3>
-        <p><strong>Pregunta:</strong> Oraciones en presente simple.</p>
-        <p><strong>Respuesta:</strong>  
-        Afirmativa: She studies.  
-        Negativa: She doesn’t study.  
-        Pregunta: Does she study?</p>
-      </div>
-    </section>
+  <main id="contenido">
+    <p>Selecciona una materia para ver las tareas resueltas.</p>
   </main>
 
   <footer>
-    <p>Hecho por Max Forero 💻</p>
+    <p>© 2025 Tareas Max Forero</p>
   </footer>
 
   <script src="script.js"></script>
