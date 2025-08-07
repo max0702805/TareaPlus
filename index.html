@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TareaPlus</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>TareaPlus 📚</h1>
+    <p>Ayuda para tus tareas escolares</p>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Publica tu tarea</h2>
+      <form id="taskForm">
+        <input type="text" id="studentName" placeholder="Tu nombre" required />
+        <textarea id="taskText" placeholder="Escribe tu tarea aquí..." required></textarea>
+        <button type="submit">Publicar</button>
+      </form>
+    </section>
+
+    <section class="tasks-section">
+      <h2>Tareas publicadas</h2>
+      <div id="taskList"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Hecho por Max Forero 💻</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
