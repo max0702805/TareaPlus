@@ -31,6 +31,7 @@ input, textarea {
   margin: 0.5rem 0;
   border-radius: 5px;
   border: 1px solid #ddd;
+  font-size: 1rem;
 }
 
 button {
@@ -40,6 +41,7 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 1rem;
 }
 
 button:hover {
@@ -59,4 +61,21 @@ footer {
   padding: 1rem;
   background-color: #eee;
   color: #666;
+}
+
+/* Estilo para tareas resueltas */
+.resolved-section {
+  margin-top: 3rem;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.subject-block {
+  margin-bottom: 1.5rem;
+  border-left: 5px solid #4f46e5;
+  background: #f9f9ff;
+  padding: 1rem;
+  border-radius: 5px;
 }
